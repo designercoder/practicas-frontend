@@ -1,0 +1,165 @@
+/*
+Síntaxis de CSS
+
+selector
+{
+  propiedad: valor;
+}
+
+tipos de selectores
+
+- Seleccionar por nombre de etiqueta
+h1
+{
+  ...
+}
+
+- Seleccionar por contexto de anidación
+
+*etiquetas descendientes de otra
+section h1
+{
+  ...
+}
+
+*etiquetas hijo directo de otra
+section>h1
+{
+  ...
+}
+
+- Seleccionar por clave de identificación
+#id
+{
+  ...
+}
+
+
+- Seleccionar por clase
+.clase
+{
+  ...
+}
+
+- Referencia a varios elementos
+h1,h2
+{
+  ...
+}
+
+Estilos que afectan a un texto (formato)
+
+tamaño de fuente: font-size
+peso de la fuente: font-weight
+decoración de un texto: text-decoration
+estilo del estilo: font-style
+color: color
+tipografía: font-type
+sombreado: text-shadow
+alineación: text-align
+transformación: text-transform
+indentación: text-indent
+separación entre las letras: letter-spacing
+altura de línea: line-height
+dirección: direction
+separación entre palabras: word-spacing
+
+Estilos para un contenedor:
+
+propiedades de caja(si es bloque):
+margen superior: margin-top
+margen derecho: margin-right
+margen inferior: margin-bottom
+margen izquierda: margin-left
+
+bordes: border-top, border-right, border-bottom, bottom-left
+espaciado interno: padding-top, padding-right, padding-bottom, padding-left
+
+margin: a b c d
+padding: a b c d
+
+bordes se les puede configurar un grosor, estilo, color
+border: grosor estilo color para las cuatro direcciones
+
+----
+
+background(fondo): color, imagen
+background-color
+background-image
+
+---
+sombreado: box-shadow
+
+posicionamiento de un contenedor:
+position:
+fixed
+
+*/
+
+header#principal{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+}
+
+h1{
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+}
+
+header#principal ul{
+  display: flex;
+  padding: 12px 15px 12px 0px;
+  margin: 0px;
+}
+
+li{
+  list-style: none;
+  margin: 2px 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+section#manjaro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+section#manjaro a{
+  display: block;
+  padding: 15px 30px;
+  border-radius: 50px 50px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(52, 190, 91);
+}
+
+section#manjaro h2{
+  font-size: 40px;
+  color: #fff;
+  margin: 20px 0px
+}
+
+section#manjaro p{
+  color: #ccc;
+  font-size: 18px;
+  margin: 20px 0px  40px 0px;;
+}
+
+header#principal a{
+    font-size: 16px;
+    color: #ccc;
+}
