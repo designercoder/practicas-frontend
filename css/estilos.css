@@ -163,3 +163,55 @@ header#principal a{
     font-size: 16px;
     color: #ccc;
 }
+
+section#started {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgb(52, 190, 91);
+  justify-content: center;
+  align-items: center;
+}
+
+section#started h2{
+  color: #fff;
+}
+section#started p{
+  max-width: 800px;
+  text-align: center;
+  color: #eee;
+  margin: 0px 0px 20px 0px;
+}
+
+section#started a{
+  padding: 15px 30px;
+  border-radius: 50px 50px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+aside#download{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  height: 30vh;
+}
+
+aside#download h2{
+  color: #fcfcfc;
+}
+
+aside#download a{
+  display: block;
+  padding: 15px 30px;
+  border-radius: 50px 50px;
+  background-color: #fcfcfc;
+  color: #222;
+  font-weight: bold;
+  font-size: 14px;
+}
